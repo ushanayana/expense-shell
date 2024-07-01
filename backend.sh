@@ -34,4 +34,5 @@ VALIDATE $? "enabling nodejs modules"
 dnf install nodejs -y &>>$LOGFILE
 VALIDATE $? "Installing Nodejs.."
 
-
+useradd expense
+VALIDATE $? "create expense user"
