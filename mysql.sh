@@ -31,3 +31,5 @@ VALIDATE $? "Installing mysql server..."
 systemctl enable mysqld &>>$LOGFILE 
 VALIDATE $? "enabling mysql server" 
 
+systemctl start mysqld &>>$LOGFILE
+VALIDATE $? "starting mysql"
